@@ -17,5 +17,5 @@ RUN cp /usr/share/graphite-web/apache2-graphite.conf /etc/apache2/sites-availabl
 # Current docker version of Ubuntu xenial does not allow input onto rootfs, so two ADDs have to be used.
 ADD run.sh /srv/run.sh
 ADD default-graphite-carbon /etc/default/graphite-carbon
-
+EXPOSE 80 2003-2004 7002
 CMD /srv/run.sh
